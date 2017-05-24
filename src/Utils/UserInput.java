@@ -3,7 +3,9 @@ package Utils;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.GregorianCalendar;
 
 /**
@@ -35,12 +37,13 @@ public class UserInput {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            if (dateForm.length() == 10 /*&& (dateForm.charAt(5) == '/' || dateForm.charAt(5) == '.') &&
-                    (dateForm.charAt(2) == '/' || dateForm.charAt(2) == '.')*/) {
-                String tmp = dateForm.replaceAll("/","");
+            if (dateForm.length() == 10 && (dateForm.charAt(5) == '/' || dateForm.charAt(5) == '.') &&
+                    (dateForm.charAt(2) == '/' || dateForm.charAt(2) == '.')) {
+                String tmp = dateForm.replaceAll("[/]","");
+                System.out.println(tmp);
                 check = false;
                 for (int i = 0; i < tmp.length(); i++) {
-                    if (!Character.isDigit(dateForm.charAt(i))) {
+                    if (!Character.isDigit(tmp.charAt(i))) {
                         check = true;
                         break;
                     }
@@ -49,14 +52,17 @@ public class UserInput {
 
             }
         }
-        String day;
-        String month;
-        String year;
-        day = dateForm.substring(0, 1);
-        month = dateForm.substring(3, 4);
-        year = dateForm.substring(6, 9);
-        Calendar calendar = new GregorianCalendar();
-        calendar.set(Integer.parseInt(year), Integer.parseInt(month), Integer.parseInt(day));
-        return (GregorianCalendar) calendar;
+        System.out.println(dateForm);
+        int day = Integer.parseInt(dateForm.substring(0, 2));
+        int month = Integer.parseInt(dateForm.substring(3, 5));
+        int year = Integer.parseInt(dateForm.substring(6, 10));
+        Calendar cal = Calendar.getInstance();
+        cal.set(year, DateGenerator.getMonthsBYInt(month),day);
+        Date date1 = cal.getTime();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/mm/yyyy");
+        String string1 = dateFormat.format(date1); // TODO: 24.05.2017  
+        Calendar ca = new GregorianCalendar();
+        ca.setTime(date1);
+        return (GregorianCalendar) ca;
     }
 }

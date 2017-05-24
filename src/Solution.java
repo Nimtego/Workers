@@ -5,6 +5,11 @@ import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 
 import static DOM.DomExample.generateXML;
 
@@ -13,7 +18,25 @@ import static DOM.DomExample.generateXML;
  * on 23.05.2017.
  */
 public class Solution {
-    public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException {
+    public static void main(String[] args) throws ParserConfigurationException,
+            IOException, SAXException {
+        Calendar cal = Calendar.getInstance();
+        cal.set(2002, Calendar.NOVEMBER, 12);
+        Date date1 = cal.getTime();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/mm/yyyy");
+        String string1 = dateFormat.format(date1);
+        System.out.println(string1);
+        Calendar calendar = new GregorianCalendar(2017, 11, 10);
+        System.out.println(calendar);
+        String string = "15.11.1983";
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.mm.yyyy");
+        Date date = null;
+        try {
+            date = simpleDateFormat.parse(string);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        System.out.println(date);
         Organization organization = new Organization();
         for (int i = 0; i < 10; i++) {
             organization.addEmployer(EmployerFabric.generateEmployer());

@@ -87,6 +87,8 @@ public abstract class Employer {
                 .append(personalInformation.getName())
                 .append(" Surname ")
                 .append(personalInformation.getSurname())
+                .append(" Date of birth ")
+                .append(personalInformation.getDateOfBirth())
                 .append(" Age ")
                 .append(personalInformation.getAge())
                 .toString();

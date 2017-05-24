@@ -90,7 +90,7 @@ public class PersonalInformation {
     }
 
     public String getDateOfBirth() {
-        return String.valueOf(dateOfBirth);
+        return dateOfBirth.getTime().toString();
     }
 
     public void setDateOfBirth(Calendar dateOfBirth) {
