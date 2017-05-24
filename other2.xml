@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ListEmployer>
+    <MANAGER>
+        <ID>8</ID>
+        <Name>Some name</Name>
+        <Surname>Some surname</Surname>
+        <Age>33</Age>
+        <Date_of_birth>11.15.83</Date_of_birth>
+        <Date_of_acceptance>15.11.2017</Date_of_acceptance>
+        <Description>Default</Description>
+        <ID>9</ID>
+        <Name>Some name</Name>
+        <Surname>Some surname</Surname>
+        <Age>33</Age>
+        <Date_of_birth>11.15.83</Date_of_birth>
+        <Date_of_acceptance>15.11.2017</Date_of_acceptance>
+        <Description>Default</Description>
+    </MANAGER>
+    <WORKER>
+        <ID>0</ID>
+        <Name>Some name</Name>
+        <Surname>Some surname</Surname>
+        <Age>33</Age>
+        <Date_of_birth>11.15.83</Date_of_birth>
+        <Date_of_acceptance>15.11.2017</Date_of_acceptance>
+        <Description>Default</Description>
+        <ID>1</ID>
+        <Name>Some name</Name>
+        <Surname>Some surname</Surname>
+        <Age>33</Age>
+        <Date_of_birth>11.15.83</Date_of_birth>
+        <Date_of_acceptance>15.11.2017</Date_of_acceptance>
+        <Description>Default</Description>
+        <ID>2</ID>
+        <Name>Some name</Name>
+        <Surname>Some surname</Surname>
+        <Age>33</Age>
+        <Date_of_birth>11.15.83</Date_of_birth>
+        <Date_of_acceptance>15.11.2017</Date_of_acceptance>
+        <Description>Default</Description>
+        <ID>3</ID>
+        <Name>Some name</Name>
+        <Surname>Some surname</Surname>
+        <Age>33</Age>
+        <Date_of_birth>11.15.83</Date_of_birth>
+        <Date_of_acceptance>15.11.2017</Date_of_acceptance>
+        <Description>Default</Description>
+        <ID>4</ID>
+        <Name>Some name</Name>
+        <Surname>Some surname</Surname>
+        <Age>33</Age>
+        <Date_of_birth>11.15.83</Date_of_birth>
+        <Date_of_acceptance>15.11.2017</Date_of_acceptance>
+        <Description>Default</Description>
+        <ID>5</ID>
+        <Name>Some name</Name>
+        <Surname>Some surname</Surname>
+        <Age>33</Age>
+        <Date_of_birth>11.15.83</Date_of_birth>
+        <Date_of_acceptance>15.11.2017</Date_of_acceptance>
+        <Description>Default</Description>
+        <ID>6</ID>
+        <Name>Some name</Name>
+        <Surname>Some surname</Surname>
+        <Age>33</Age>
+        <Date_of_birth>11.15.83</Date_of_birth>
+        <Date_of_acceptance>15.11.2017</Date_of_acceptance>
+        <Description>Default</Description>
+        <ID>7</ID>
+        <Name>Some name</Name>
+        <Surname>Some surname</Surname>
+        <Age>33</Age>
+        <Date_of_birth>11.15.83</Date_of_birth>
+        <Date_of_acceptance>15.11.2017</Date_of_acceptance>
+        <Description>Default</Description>
+    </WORKER>
+</ListEmployer>
